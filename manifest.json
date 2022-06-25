@@ -1,0 +1,13 @@
+{
+  "name": "Schichtplaner Plugin",
+  "description": "Extension for schichtplaner-online with the needs of Pfannestiel",
+  "version": "3.1",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+	  "matches": ["https://schichtplaner-online.de/schedule/month/index/*"],
+	  "js": ["monthViewScript.js"]
+    }
+  ],
+  "icons": { "128": "icon128.png", "48": "icon48.png"}
+}
